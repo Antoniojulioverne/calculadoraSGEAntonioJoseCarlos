@@ -2,27 +2,40 @@ package calculadora;
 
 public class Calculadora {
 
-	private int numero;
-	private int numeroAnt;
-	
-	public Calculadora() {
-		this.numero=0;
-		this.numeroAnt=0;
-	}
-	
-	
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		Calculadora c = new Calculadora();
-		
-		System.out.println("Introduzca numero 1");
-		
-		System.out.println("Introduzca numero 2");
-		
-		System.out.println("Elige una operacion: +, -, *, /");
-		
-	}
+   public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Bienvenido a la calculadora básica");
+        System.out.println("Seleccione una operación:");
+        System.out.println("1. Suma");
+        System.out.println("2. Resta");
+        System.out.println("3. Multiplicación");
+        System.out.println("4. División");
+        System.out.print("Ingrese el número de la operación que desea realizar: ");
+
+        int opcion = scanner.nextInt();
+
+        System.out.print("Ingrese el primer número: ");
+        double num1 = scanner.nextDouble();
+
+        System.out.print("Ingrese el segundo número: ");
+        double num2 = scanner.nextDouble();
+
+        double resultado;
+        switch (opcion) {
+            case 1:
+                resultado = num1 + num2;
+                System.out.println("El resultado de la suma es: " + resultado);
+                break;
+            case 2:
+                resultado = num1 - num2;
+                System.out.println("El resultado de la resta es: " + resultado);
+                break;
+            default:
+                System.out.println("Opción no válida. Por favor, seleccione una opción entre 1 y 4.");
+        }
+
+        scanner.close();
+    }
 }
+
