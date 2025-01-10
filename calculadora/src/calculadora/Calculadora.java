@@ -23,14 +23,7 @@ public class Calculadora {
 
         double resultado;
         switch (opcion) {
-            case 1:
-                resultado = num1 + num2;
-                System.out.println("El resultado de la suma es: " + resultado);
-                break;
-            case 2:
-                resultado = num1 - num2;
-                System.out.println("El resultado de la resta es: " + resultado);
-                break;
+            
 			case 3:
                 resultado = num1 * num2;
                 System.out.println("El resultado de la multiplicación es: " + resultado);
