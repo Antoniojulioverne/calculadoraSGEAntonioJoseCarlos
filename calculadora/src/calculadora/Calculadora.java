@@ -31,6 +31,18 @@ public class Calculadora {
                 resultado = num1 - num2;
                 System.out.println("El resultado de la resta es: " + resultado);
                 break;
+            
+			case 3:
+                resultado = num1 * num2;
+                System.out.println("El resultado de la multiplicación es: " + resultado);
+                break;
+            case 4:
+                if (num2 != 0) {
+                    resultado = num1 / num2;
+                    System.out.println("El resultado de la división es: " + resultado);
+                } else {
+                    System.out.println("Error: No se puede dividir entre cero.");
+                }
             default:
                 System.out.println("Opción no válida. Por favor, seleccione una opción entre 1 y 4.");
 			
