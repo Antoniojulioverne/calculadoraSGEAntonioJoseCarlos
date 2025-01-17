@@ -31,11 +31,6 @@ public class Calculadora {
                 resultado = num1 - num2;
                 System.out.println("El resultado de la resta es: " + resultado);
                 break;
-            
-			case 3:
-                resultado = num1 * num2;
-                System.out.println("El resultado de la multiplicación es: " + resultado);
-                break;
             case 4:
                 if (num2 != 0) {
                     resultado = num1 / num2;
